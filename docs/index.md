@@ -1,6 +1,7 @@
 # Welcome to BrainWave
 
 BrainWave is an educational social media platform designed for students with shorter attention spans, offering a microlearning experience in a focused and collaborative environment. The platform allows users to connect with peers, promote projects and clubs, and learn directly from their own teachers. A classroom feature will be integrated, enabling users to create classes or groups where they can manage assignments, share study materials, and engage in group chats with the entire class. BrainWave filters content to ensure that only educational material is shared, eliminating distractions like reels and non-educational content.
+
 ## Key Features
 
 ### 1. Chat, Reels, Posts, and Accounts
@@ -22,7 +23,7 @@ BrainWave includes a **classroom feature** where groups are created for each cla
 All content is filtered to ensure it aligns with educational goals, eliminating inappropriate material and distractions (e.g., explicit content or non-educational reels).
 
 ### 6. Microlearning
-Embrace the power of **microlearning** with short, 3-minute videos designed for focused learning. Longer educational videos are available as a separate option.
+Embrace the power of **microlearning** with short, -minute videos designed for focused learning. Longer educational videos are available as a separate option.
 
 ### 7. Content Preference Algorithm
 A smart algorithm (likely similar to **EdgeRank**) will tailor content to individual users based on engagement and preferences, helping them discover the most relevant educational material.
@@ -31,7 +32,7 @@ Explore the [Features](features/overview.md) section to dive deeper into each fe
 
 ## Documentation
 
-Check out our [Documentaion](Documentation/documentationIndex.md) and  join our  [Discord Community]() (coming soon) to learn more.
+Check out our [Documentation](Documentation/documentationIndex.md) and join our [Discord Community]() (coming soon) to learn more.
 
 ## About the Developer
-[Shovan Raut](https://shovanraut.vercel.app/) is an eager learner and tech enthusiast, always exploring new ideas and technologies. Feel free to [collaborate]()
+[Shovan Raut](https://shovanraut.vercel.app/) is an eager learner and tech enthusiast, always exploring new ideas and technologies. Feel free to [collaborate]() on projects.

@@ -1,7 +1,5 @@
 # BrainWave Documentation
 
-
-
 ## Frameworks Used
 
 ### 1. Frontend (Cross-platform)

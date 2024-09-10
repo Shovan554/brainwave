@@ -27,7 +27,6 @@ nav:
 
   - Help: help.md
 
-
 markdown_extensions:
   - toc:
       permalink: true
@@ -36,7 +35,7 @@ markdown_extensions:
 
 plugins:
   - search
-  
+
 extra:
   social: []
   favicon: null  # Remove favicon for a simpler look
