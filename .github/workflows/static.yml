@@ -52,7 +52,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload only the generated site files from the 'site' directory
-          path: 'site/'
+          path: 'documentation/docs/index.md'
 
       # Deploy the site to GitHub Pages
       - name: Deploy to GitHub Pages
