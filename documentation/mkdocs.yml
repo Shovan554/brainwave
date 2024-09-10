@@ -1,0 +1,42 @@
+site_name: BrainWave
+site_url: https://brainwave.docs
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: white
+      accent: teal
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+nav:
+  - Home: index.md
+  - Features:
+      - Chat, Reels, Posts, and Accounts: features/chat_reels_posts.md
+      - Club Accounts: features/club_accounts.md
+      - Project Portfolios: features/project_portfolios.md
+      - Classroom Feature: features/classroom_feature.md
+      - Content Filtering: features/content_filtering.md
+      - Microlearning: features/microlearning.md
+      - Content Preference Algorithm: features/content_preference_algorithm.md
+      
+  - Documentation: 
+      - Framework Used and Installation: documentationIndex.md
+
+  - Help: help.md
+
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - admonition
+  - codehilite
+
+plugins:
+  - search
+
+extra:
+  social: []
+  favicon: null  # Remove favicon for a simpler look
