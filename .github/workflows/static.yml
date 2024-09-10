@@ -1,5 +1,5 @@
 # Simple workflow for deploying static content to GitHub Pages
-name: Deploy static content to Pages
+name: Deploy MkDocs static content to Pages
 
 on:
   # Runs on pushes targeting the default branch
@@ -22,7 +22,7 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  # Single deploy job since we're just deploying
+  # Single deploy job for building and deploying MkDocs site
   deploy:
     environment:
       name: github-pages
@@ -31,13 +31,30 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
+
+      # Set up Python environment and install MkDocs
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.x
+      
+      - name: Install MkDocs and Material theme
+        run: |
+          pip install mkdocs-material
+
+      # Build the MkDocs site
+      - name: Build MkDocs site
+        run: |
+          mkdocs build --clean
+
+      # Upload the generated site to GitHub Pages
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload entire repository
-          path: '.'
+          # Upload only the generated site files from the 'site' directory
+          path: 'site/'
+
+      # Deploy the site to GitHub Pages
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
