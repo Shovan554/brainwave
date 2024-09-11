@@ -2,6 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://brainwave.docs/</loc>
-         <lastmod>2024-09-10</lastmod>
+         <lastmod>2024-09-11</lastmod>
+    </url>
+    <url>
+         <loc>https://brainwave.docs/documentationIndex/</loc>
+         <lastmod>2024-09-11</lastmod>
+    </url>
+    <url>
+         <loc>https://brainwave.docs/help/</loc>
+         <lastmod>2024-09-11</lastmod>
+    </url>
+    <url>
+         <loc>https://brainwave.docs/features/chat_reels_posts/</loc>
+         <lastmod>2024-09-11</lastmod>
+    </url>
+    <url>
+         <loc>https://brainwave.docs/features/classroom_feature/</loc>
+         <lastmod>2024-09-11</lastmod>
+    </url>
+    <url>
+         <loc>https://brainwave.docs/features/club_accounts/</loc>
+         <lastmod>2024-09-11</lastmod>
+    </url>
+    <url>
+         <loc>https://brainwave.docs/features/content_filtering/</loc>
+         <lastmod>2024-09-11</lastmod>
+    </url>
+    <url>
+         <loc>https://brainwave.docs/features/content_preference_algorithm/</loc>
+         <lastmod>2024-09-11</lastmod>
+    </url>
+    <url>
+         <loc>https://brainwave.docs/features/microlearning/</loc>
+         <lastmod>2024-09-11</lastmod>
+    </url>
+    <url>
+         <loc>https://brainwave.docs/features/project_portfolios/</loc>
+         <lastmod>2024-09-11</lastmod>
     </url>
 </urlset>
