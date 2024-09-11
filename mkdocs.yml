@@ -1,8 +1,8 @@
 site_name: BrainWave
-site_url: https://brainwave.docs
+site_url: https://<your-github-username>.github.io/<your-repository-name>/
 
 theme:
-  name: mkdocs
+  name: material
   palette:
     - scheme: default
       primary: white
@@ -23,7 +23,6 @@ nav:
       - Content Preference Algorithm: features/content_preference_algorithm.md
   - Documentation: 
       - Framework Used and Installation: documentationIndex.md
-
   - Help: help.md
 
 markdown_extensions:
@@ -36,5 +35,4 @@ plugins:
   - search
 
 extra:
-  social: []
   favicon: null  # Remove favicon for a simpler look
