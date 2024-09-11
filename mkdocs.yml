@@ -21,7 +21,6 @@ nav:
       - Content Filtering: features/content_filtering.md
       - Microlearning: features/microlearning.md
       - Content Preference Algorithm: features/content_preference_algorithm.md
-      
   - Documentation: 
       - Framework Used and Installation: documentationIndex.md
 
