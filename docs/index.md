@@ -28,7 +28,7 @@ Embrace the power of **microlearning** with short, 3-minute videos designed for 
 ### 7. Content Preference Algorithm
 A smart algorithm (likely similar to **EdgeRank**) will tailor content to individual users based on engagement and preferences, helping them discover the most relevant educational material.
 
-Explore the [Features](features/overview.md) section to dive deeper into each feature.
+Explore the [Features]() section to dive deeper into each feature.
 
 ## Documentation
 
