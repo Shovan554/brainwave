@@ -32,7 +32,7 @@ Explore the [Features]() section to dive deeper into each feature.
 
 ## Documentation
 
-Check out our [Documentation](Documentation/documentationIndex.md) and join our [Discord Community]() (coming soon) to learn more.
+Check out our [Documentation](documentationIndex.md) and join our [Discord Community]() (coming soon) to learn more.
 
 ## About the Developer
 [Shovan Raut](https://shovanraut.vercel.app/) is an eager learner and tech enthusiast, always exploring new ideas and technologies. Feel free to [collaborate]() on projects.
