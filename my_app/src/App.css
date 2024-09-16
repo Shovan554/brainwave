@@ -36,3 +36,29 @@
     transform: rotate(360deg);
   }
 }
+
+/* Adding Jersey25 font */
+@font-face {
+  font-family: 'Jersey25';
+  src: url('./assets/fonts/Jersey25-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Adding Jersey10 font for BrainWave title */
+@font-face {
+  font-family: 'Jersey10';
+  src: url('./assets/fonts/Jersey10-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Set Jersey25 as the default font for the whole app */
+* {
+  font-family: 'Jersey25', sans-serif;
+}
+
+/* Apply Jersey10 only to the BrainWave title */
+.brain-text, .wave-text {
+  font-family: 'Jersey10', sans-serif; /* Use Jersey10 only for BrainWave */
+}

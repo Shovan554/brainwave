@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/brainwave.iml" filepath="$PROJECT_DIR$/brainwave.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android/brainwave_android.iml" filepath="$PROJECT_DIR$/android/brainwave_android.iml" />
+    </modules>
+  </component>
+</project>

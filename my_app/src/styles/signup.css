@@ -1,0 +1,111 @@
+/* src/pages/signup.css */
+
+.signup-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    background-color: #190F43;
+    padding-top: 50px;
+  }
+  
+  .signup-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 0px;
+  }
+  
+  .title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transform: translateX(-50%);
+  }
+  
+  .brain-text {
+    color: #DADA2C;
+    font-size: 90px;
+    font-family: 'Jersey10', sans-serif;
+    -webkit-text-stroke: 0.5px #DADA2C;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    animation: jumpUp 1.5s ease-in-out infinite;
+  }
+  
+  .wave-text {
+    color: #1d34bbcd;
+    font-size: 90px;
+    font-family: 'Jersey10', sans-serif;
+    -webkit-text-stroke: 0.5px #1d34bbcd;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    animation: jumpDown 1.5s ease-in-out infinite;
+  }
+  
+  .signup-form {
+    background-color: #DADA2C;
+    padding: 40px;
+    border-radius: 75px;
+    box-shadow: 0 4px 8px rgba(18, 2, 2, 0.351);
+    text-align: center;
+    width: 490px;
+    margin-bottom: 200px;
+    
+  }
+  
+  .signup-form h2 {
+    color: black;
+    font-family: 'Jersey25', sans-serif;
+    font-size:40px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    letter-spacing: 1px;
+  }
+  
+  .signup-form input {
+    width: 60%;
+    padding: 18px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 75px;
+    border: 1px solid black;
+    font-size: 20px;
+  }
+  
+  .signup-form select
+  {width: 69%;
+    padding: 18px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 75px;
+    border: 1px solid black;
+    font-size: 20px;
+  }
+  .signup-form button {
+    width: 20%;
+    padding: 12px;
+    background-color: #1d34bbcd;
+    color: white;
+    border-radius: 75px;
+    cursor: pointer;
+    font-size: 18px;
+    border: 1px solid black;
+  }
+  
+  .signup-footer {
+    margin-top: 20px;
+  }
+  
+  .signup-footer a {
+    color: rgb(32, 19, 102);
+    text-decoration: underline;
+  }
+  
+  .signup-footer p {
+    color: black;
+    margin-top: 10px;
+  }
