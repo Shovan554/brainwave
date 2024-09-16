@@ -2,29 +2,26 @@
 
 ## Frameworks Used
 
-### 1. Frontend (Cross-platform)
-- **Flutter**: Used to build the Android, iOS, and Web versions of the app.
-  - **Dart**: The programming language used for Flutter development.
+### 1. Frontend
+- **React**: The primary frontend framework for building the user interface of the BrainWave app.
+  - **React Hooks**: For managing state and lifecycle methods efficiently within functional components.
+  - **React Router**: For handling navigation between different pages.
 
-### 2. Backend
-- **Node.js**: Provides the backend API that communicates with the PostgreSQL database.
-  - **Express.js**: A minimalist web framework for Node.js to handle routing and HTTP requests.
-  - **pg**: A PostgreSQL client for Node.js to manage database interactions.
-
-### 3. Database
+### 2. Backend (Future Consideration)
+- **Node.js (Optional)**: We may consider using Node.js with Express for handling the backend API and communication with the database.
 - **PostgreSQL**: A robust relational database system used to store all user data, posts, clubs, assignments, and other platform content.
 
-### 4. API Communication
-- **REST API**: The Node.js backend uses Express to create a RESTful API for communication between the Flutter app and the backend.
+### 3. API Communication
+- **REST API**: The backend communicates with the frontend using RESTful APIs to handle data requests and responses.
 
-### 5. State Management (Flutter)
-- **Provider** or **Riverpod**: For managing application state efficiently across the Flutter app.
+### 4. State Management
+- **React Context API or Redux**: For managing application state efficiently across the app.
+  
+### 5. Authentication
+- **JWT (JSON Web Tokens)**: To secure API endpoints and manage user authentication and sessions.
 
-### 6. Authentication
-- **JWT (JSON Web Tokens)**: Used for securing API endpoints and managing user authentication and sessions.
-
-### 7. Storage
-- **Shared Preferences** (Flutter): Used to securely store JWT tokens on the client side for user authentication.
+### 6. Storage
+- **LocalStorage / SessionStorage**: Used to securely store JWT tokens on the client side for user authentication.
 
 ---
 
