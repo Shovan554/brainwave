@@ -1,129 +1,167 @@
-/* src/pages/login.css */
-@keyframes jumpUp {
-    0%, 100% {
-      transform: translateY(0); /* Starting and ending position */
-    }
-    50% {
-      transform: translateY(-20px); /* Move up by 20px */
-    }
+@keyframes slideFromTop {
+  0% {
+    transform: translateY(-200vh); /* Start completely off the top of the screen */
+    opacity: 1; /* Fully opaque */
   }
+  100% {
+    transform: translateY(0); /* End at its natural position */
+    opacity: 1; /* Fully opaque */
+  }
+}
 
+
+
+/* Slide out to the left */
+@keyframes slideOutLeft {
+  0% {
+    transform: translateX(0); /* Start at its natural position */
+    opacity: 1; /* Fully visible */
+  }
+  100% {
+    transform: translateX(-100vw); /* Move off the screen to the left */
+    opacity: 1 /* Fully transparent */
+  }
+}
+@keyframes slideToTop {
+  0% {
+    transform: translateY(0); /* Start at its natural position */
+    opacity: 10; /* Fully visible */
+  }
+  100% {
+    transform: translateY(-200vh); /* Move completely off the top */
+    opacity: 10; /* Fully transparent */
+  }
+  
+}
+
+/* Jump animations */
+@keyframes jumpUp {
+  0%, 100% {
+    transform: translateY(0); /* Starting and ending position */
+  }
+  50% {
+    transform: translateY(-20px); /* Move up by 20px */
+  }
+}
 
 @keyframes jumpDown {
-    0%,100%{
-        transform: translateY(-20px);
-    }
-    50%{
-        transform:  translate(0);
-    }
-    }
-    
+  0%, 100% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(0); /* Move back down to its original position */
+  }
+}
 
 .brainwave-animation {
-    margin-right: 110px; /* Space between animation and text */
-  }
-  
-  .login-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start; /* Align content to start from the top */
-    min-height: 100vh;
-    background-color: #190F43;
-    padding-top: 50px; /* Add padding of 50px at the top */
-  }
-  
-  .login-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 0px; /* Space between BrainWave and Welcome Back */
-  }
-  
-  .title-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    transform: translateX(-50%); /* Shifts the center of the title-container to the center of the page */
-  }
-  
-  .brain-text {
-    color: #DADA2C;
-    font-size: 90px;
-    font-family: 'Jersey10', sans-serif;
-    -webkit-text-stroke: 0.5px #DADA2C;
-    letter-spacing: 4px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Drop shadow effect */
-    animation: jumpUp 1.5s ease-in-out infinite; /* Apply jumping animation */
+  margin-right: 110px; /* Space between animation and text */
+}
 
-  }
-  
-  .wave-text {
-    color: #1d34bbcd;
-    font-size: 90px;
-    font-family: 'Jersey10', sans-serif;
-    -webkit-text-stroke: 0.5px #1d34bbcd;
-    letter-spacing: 4px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Drop shadow effect */
-    animation: jumpDown 1.5s ease-in-out infinite; /* Apply jumping animation */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Align content to start from the top */
+  min-height: 100vh;
+  background-color: #190F43;
+  padding-top: 50px; /* Add padding of 50px at the top */
+}
 
-  }
-  
-  .login-form {
-    background-color: #DADA2C;
-    padding: 40px;
-    border-radius: 75px;
-    box-shadow: 0 4px 8px rgba(18, 2, 2, 0.351);
-    text-align: center;
-    width: 490px;
-  }
-  
-  .login-form h2 {
-    color: black;
-    font-family: 'Jersey25', sans-serif;
-    font-size : 50px;
-    margin-bottom: 30px;
-    text-shadow : 2px 2px 4px rgba(0, 0, 0, 0.5);
-    margin-top: 10px; /* Increased space from BrainWave */
-    letter-spacing: 2px;
-  }
-  
-  .login-form input {
-    width: 70%;
-    padding: 18px;
-    margin: 10px 0;
-    border: none;
-    border-radius: 75px;
-    border: 1px solid black; /* Stroke (border) for input fields */
-    font-size: 20px;
-  }
-  
-  .login-form button {
-    width: 20%;
-    padding: 12px;
-    background-color: #1d34bbcd;
-    color: white;
-    border-radius: 75px;
-    cursor: pointer;
-    font-size: 18px;
-    border: 1px solid black; /* Stroke (border) for the button */
-  }
-  
-  .login-footer {
-    margin-top: 20px;
-  } 
-  
-  .login-footer a {
-    color: rgb(32, 19, 102);
-    text-decoration: underline;
-    /* No stroke on "Forgot Password?" and "Don't have an account?" links */
-  }
-  
-  .login-footer p {
-    color: black;
-    margin-top: 10px;
-    /* No stroke on "Don't have an account?" text */
-  }
-  
+.login-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 0px; /* Space between BrainWave and Welcome Back */
+}
+
+.title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transform: translateX(-50%); /* Shifts the center of the title-container to the center of the page */
+}
+
+.brain-text {
+  color: #DADA2C;
+  font-size: 80px;
+  font-family: 'Jersey10', sans-serif;
+  -webkit-text-stroke: 0.5px #DADA2C;
+  letter-spacing: 4px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Drop shadow effect */
+  animation: jumpUp 1.5s ease-in-out infinite; /* Apply slide-in and jump animation */
+}
+
+.wave-text {
+  color: #1d34bbcd;
+  font-size: 80px;
+  font-family: 'Jersey10', sans-serif;
+  -webkit-text-stroke: 0.5px #1d34bbcd;
+  letter-spacing: 4px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Drop shadow effect */
+  animation: jumpDown 1.5s ease-in-out infinite; /* Apply slide-in and jump animation */
+}
+
+.login-form {
+  background-color: #DADA2C;
+  padding: 40px;
+  border-radius: 75px;
+  box-shadow: 0 4px 8px rgba(18, 2, 2, 0.351);
+  text-align: center;
+  width: 450px;
+  animation: slideFromTop 0.3s ease-out; /* Apply the sliding animation */
+}
+
+.login-form-exit {
+  animation: slideToTop 1s ease-out forwards; /* Slide out to the left */
+}
+
+.login-form h2 {
+  color: black;
+  font-family: 'Jersey25', sans-serif;
+  font-size: 50px;
+  margin-bottom: 70px;
+  margin-top: 10px; /* Increased space from BrainWave */
+  letter-spacing: 2px;
+}
+
+.login-form input {
+  width: 70%;
+  padding: 18px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 75px;
+  border: 0.5px solid black; /* Stroke (border) for input fields */
+  font-size: 20px;
+}
+
+.login-form button {
+  width: 20%;
+  padding: 12px;
+  background-color: #1d34bbcd;
+  color: white;
+  border-radius: 75px;
+  cursor: pointer;
+  font-size: 18px;
+  border: 1px solid black; /* Stroke (border) for the button */
+}
+
+.login-footer {
+  margin-top: 80px;
+}
+
+.login-footer a {
+  color: rgb(32, 19, 102);
+  text-decoration: underline;
+}
+
+.login-footer p {
+  color: black;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.error {
+  color: red;
+  margin-top: 10px;
+}

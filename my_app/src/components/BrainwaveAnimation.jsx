@@ -15,7 +15,7 @@ const BrainwaveAnimation = () => {
 
   return (
     <div className="brainwave-animation">
-      <Lottie options={defaultOptions} height={300} width={300} /> {/* Increase size here */}
+      <Lottie options={defaultOptions} height={250} width={250} /> {/* Increase size here */}
     </div>
   );
 };

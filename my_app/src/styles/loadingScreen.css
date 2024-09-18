@@ -1,0 +1,95 @@
+@keyframes moveUpAndStop {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-17vh); /* Move up and stop */
+        opacity: 1; /* Maintain visibility */
+    }
+}
+
+@keyframes moveUpAndStopLoad {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-60vh); /* Keep the loading animation in place */
+        opacity: 10; /* Maintain visibility */
+    }
+}
+
+@keyframes jumpUp {
+    0%, 100% {
+        transform: translateY(0); /* Starting and ending position */
+    }
+    50% {
+        transform: translateY(-19px); /* Move up by 20px */
+    }
+}
+
+@keyframes jumpDown {
+    0%, 100% {
+        transform: translateY(-20px);
+    }
+    50% {
+        transform: translateY(0); /* Move back down to its original position */
+    }
+}
+
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #190F43;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Stack the elements vertically */
+    z-index: 9999; /* Keep it on top */
+}
+
+.loading-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; /* Space between text and loading animation */
+}
+
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading-brain-text {
+    color: #DADA2C;
+    font-size: 90px;
+    font-family: 'Jersey10', sans-serif;
+    -webkit-text-stroke: 0.5px #DADA2C;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Drop shadow effect */
+    animation: jumpDown 1.6s ease-in-out infinite; /* Apply jumping animation */
+}
+
+.loading-wave-text {
+    color: #1d34bbcd;
+    font-size: 90px;
+    font-family: 'Jersey10', sans-serif;
+    -webkit-text-stroke: 0.5px #1d34bbcd;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Drop shadow effect */
+    animation: jumpUp 1.6s ease-in-out infinite; /* Apply jumping animation */
+}
+
+.load-animation {
+    margin-top: 20px; /* Space between the text and the loading animation */
+}
+
+/* Animation for upward movement but stops at the center of the login screen */
+.transitioning .loading-header {
+    animation: moveUpAndStop 1.5s forwards;
+}
