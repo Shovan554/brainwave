@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Login from './pages/Login'; // Import the Login page
 import Signup from './pages/Signup'; // Import the Signup page
 import Home from './pages/Home'; // Import the Home page
+import CreatePost from './pages/CreatePost';
+
 import './App.css'; // Assuming your App.css is in the src folder
 import LoadingScreen from './components/LoadingScreen'; // Import the Loading screen
 
@@ -21,6 +23,7 @@ function App() {
             <Route path="/login" element={<Login />} /> {/* Explicit login route */}
             <Route path="/signup" element={<Signup />} /> {/* Signup route */}
             <Route path="/home" element={<Home />} /> {/* Home page route */}
+            <Route path="/create" element={<CreatePost/>} />
           </Routes>
         </div>
       )}

@@ -1,0 +1,92 @@
+/* src/styles/post.css */
+
+.post-container {
+  background-color: #10082f;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 600px; /* Fixed width */
+  
+  margin: 50px auto;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden; /* Prevent overflow beyond fixed height */
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.post-user-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.post-user-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #DADA2C;
+}
+
+.post-media {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.post-media-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.post-content-box {
+  background-color: #10082f;
+  padding: 15px;
+  border-radius: 8px;
+  flex-grow: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.post-content {
+  font-size: 18px;
+  color: white;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Limit caption to 3 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding:20px;
+}
+
+.post-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #666;
+  margin-top: 10px;
+}
+
+.post-actions .post-icon {
+  margin-right: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.post-actions .post-icon:hover {
+  color: #DADA2C;
+}

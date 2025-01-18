@@ -1,0 +1,26 @@
+/* src/styles/searchBar.css */
+
+.search-bar-container {
+  width: 100%; /* Ensure the search bar fills its wrapper width */
+  padding: 10px 30px;
+  border-radius: 10px;
+  background-color: #190F43;
+  display: flex;
+  align-items: center;
+  border: 1px solid #B3B3B3;
+  border-radius: 50px;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  background: none;
+  color: #FFFFFF;
+  font-size: 18px;
+  width: 100%; /* Input takes the full width of the search bar */
+  padding: 5px;
+}
+
+.search-input::placeholder {
+  color: #B3B3B3;
+}

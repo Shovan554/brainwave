@@ -1,0 +1,63 @@
+/* src/styles/mainLogo.css */
+@keyframes jumpUp {
+    0%, 100% {
+      transform: translateY(0); /* Starting and ending position */
+    }
+    50% {
+      transform: translateY(-20px); /* Move up by 20px */
+    }
+  }
+  
+  @keyframes jumpDown {
+    0%, 100% {
+      transform: translateY(-20px);
+    }
+    50% {
+      transform: translateY(0); /* Move back down to its original position */
+    }
+  }
+  
+.main-logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .main-logo-animation {
+    margin-top:-20px;
+    margin-right: -20px; /* Remove and adjust negative margin to remove gap */
+    display: flex;
+    align-items: center;
+    padding: 0; /* Ensure no extra padding */
+  }
+  
+  .main-logo-title {
+    display: flex;
+    flex-direction: row; /* Keep the BrainWave text on the same line */
+    align-items: center;
+    margin-left: -3px; /* Slight adjustment to text positioning */
+  }
+  
+  .main-logo-brain-text, .main-logo-wave-text {
+    
+    font-size: 55px;
+    font-family: 'Jersey10', sans-serif;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Drop shadow effect */
+  }
+  
+  .main-logo-brain-text {
+    color: #DADA2C; /* Color for Brain */
+    -webkit-text-stroke: 0.5px #DADA2C;
+    animation: jumpUp 2s ease-in-out infinite; /* Apply slide-in and jump animation */
+
+
+  }
+  
+  .main-logo-wave-text {
+    color: #1d34bbcd; /* Color for Wave */
+    -webkit-text-stroke: 0.5px #1d34bbcd;
+      animation: jumpDown 2s ease-in-out infinite; /* Apply slide-in and jump animation */
+      margin-right: 10px;
+
+  }

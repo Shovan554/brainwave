@@ -1,0 +1,120 @@
+/* createPost.css */
+/* Slide in from bottom animation */
+@keyframes slideFromBottom {
+    0% {
+      transform: translateY(200vh); /* Start completely off the bottom of the screen */
+      opacity: 0; /* Fully transparent */
+    }
+    100% {
+      transform: translateY(0); /* End at its natural position */
+      opacity: 1; /* Fully visible */
+    }
+  }
+  
+  .create-post-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  /* Media preview styling */
+  .media-preview {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px dotted black; /* Black dotted border */
+    border-radius: 20px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.1); /* Transparent background */
+    gap: 10px;
+    transition: opacity 0.5s ease-out;
+  }
+  
+  .media-preview p {
+    color: #888;
+    font-size: 18px;
+  }
+  
+  .media-preview input[type="file"] {
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .uploaded-media-preview {
+    width: 500px;
+    max-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Allow positioning of the cross button */
+    gap: 10px;
+  }
+  
+  .uploaded-media-preview img,
+  .uploaded-media-preview video {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 20px;
+  }
+  
+  /* Cross button styling */
+  .cross-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .cross-button:hover {
+    background-color: red;
+  }
+  
+  /* Caption box styling */
+  .caption-box {
+    width: 60%;
+    height: 20px;
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    resize: none;
+    background-color: #f9f9f9;
+    margin-top: 60px; /* Added top margin for spacing */
+  }
+  
+  /* Post button styling with slide-in animation */
+  .post-button {
+    width: 30%;
+    padding: 15px 20px;
+    background-color: #DADA2C;
+    color: black;
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    opacity: 0; /* Start as hidden */
+    animation: none; /* No animation by default */
+  }
+  
+  .post-button.slide-in {
+    animation: slideFromBottom 0.5s ease-in forwards; /* Apply slide-in animation */
+  }
+  
+  .post-button:hover {
+    background-color: #c9c92b;
+  }
