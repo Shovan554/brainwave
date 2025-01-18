@@ -1,6 +1,6 @@
 # BrainWave
 
-![BrainWave Banner](assets/images/banner.png)
+![BrainWave Banner](my_app/public/banner.png)
 
 BrainWave is an educational social media platform designed to foster learning and collaboration. This platform includes features like classroom integration, microlearning, content filtering, and project portfolios.
 
@@ -34,20 +34,8 @@ Follow these steps to run the project locally:
 
 4. **Run the development server:**:
    ```bash
-  node server.js
+   node server.js
 
 5.	**Open http://localhost:3000 in your browser to view the application.**
 
 
-### Project Structure
-brainwave/
-├── src/
-│   ├── assets/          # Images, animations, and fonts
-│   ├── components/      # Reusable React components
-│   ├── pages/           # Application pages
-│   ├── styles/          # CSS files
-│   └── App.js           # Main application file
-├── public/              # Static files
-├── README.md            # Project documentation
-├── package.json         # Project configuration
-└── .gitignore           # Ignored files
